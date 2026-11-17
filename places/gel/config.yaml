@@ -1,0 +1,31 @@
+# Gel Studio: a round grey cove under three softboxes, one ballistic-gel figure on the stage to poke, punch, slap,
+# press and walk. Shared by everyone in the room; her settings are the room's.
+mode: 3d
+terrain:
+  kind: "off"
+gravity: { x: 0, y: -24, z: 0 }
+defaultSpawnPoint: { x: 0, y: 0.1, z: 4.5 }
+defaultSpawnRotation: { yaw: 0 }
+worldBounds: { bottom: -30 }
+camera:
+  kind: custom
+  behavior: scripts/gel/camera.js
+  orientation: { source: look }
+  pointerLock: drag
+  hideLocalPlayer: true
+  minPitch: -1.1
+  maxPitch: 0.6
+  state: { yaw: 0, pitch: -0.12 }
+ui:
+  render: places/gel/ui.js
+inputs:
+  actions:
+    gelTap: { mouse: left, touch: { gesture: tap } }
+    gelHold: { mouse: right, touch: { gesture: hold } }
+    gel: { touch: { button: false } }
+    lab: { touch: { button: false } }
+atmosphere:
+  timeOfDay: 13
+  clouds: { enabled: false }
+  fog: { kind: linear, near: 400, far: 900 }
+  hemisphere: { skyColor: "oklch(0.9 0.01 240)", groundColor: "oklch(0.45 0.005 250)", intensity: 0.35 }

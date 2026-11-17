@@ -1,0 +1,97 @@
+# spawn-scene v2 yaml x0z0
+gel-athletic:
+  behavior: scripts/gel/body.js
+  feetPosition: {x: 0, y: 0.05, z: 0}
+  id: gel-athletic
+  material: {kind: scripted, params: {by: 1.235, cb: 0.8199637053235279, cg: 0.8671355375209047, clear: 1, cr: 0.8831797376727453, dent: 1, ey: 1, gloss: 0, glow: 0, gy: 0.88, hits: [[-0.10292496532201764, 0.9146733999252319, 0.19003240764141083, 1702.0333333336748], [-0.12550581991672513, 0.9217068672180175, 0.17564074695110324, 1703.8999999999069], [-0.05790859460830686, 0.8937876343727111, 0.19921021163463593, 1704.8666666666977], [-0.08798029273748395, 0.8927560567855835, 0.19437459111213684, 1705.8999999999069], [-0.10604817420244214, 0.9202673554420471, 0.1881200224161148, 1707.1000000000931], [-0.09845068305730817, 0.8419468522071838, 0.17274898290634155, 1708]], hk: [[2, 1, 0, 0], [2, 1, 0, 0], [2, 1, 0, 0], [2, 1, 0, 0], [2, 1, 0, 0], [2, 1, 0, 0]], rg: [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]], rsel: 0, settle: 1, soft: 1, ty: 0.66, walk: 0, walkT: -9999, wob: 1, xs: 1}, script: scripts/gel/gel-material.js}
+  model: {id: /cdn/value.b2a93eac993d9a5925f16f05aa9716b5873032056acba00e5a854105211761ae.glb}
+  rotation: {yaw: 180}
+  state: {home: {x: 0, y: 0.05, z: 0}, n: 5, rigged: true, rigless: false, spots: {by: 1.235, ey: 1, gy: 0.88, ty: 0.66, xs: 1}, tune: {build: athletic, color: white, dent: 1, gloss: false, rg: {}, sel: null, settle: 1, soft: 1, wob: 1}, yaw: 180}
+  tags: [gel-figure]
+gel-hum:
+  audio: {clip: cdn/sfx-quiet-studio-room-tone-soft-hum.mp3, gain: 0.12, loop: true, spatial: false}
+  feetPosition: {x: 0, y: 3, z: 0}
+  id: gel-hum
+gel-light-fill:
+  feetPosition: {x: 2.6, y: 2.6, z: 1.7}
+  id: gel-light-fill
+  light: {aim: {x: 0, y: 1, z: 0}, color: oklch(0.98 0.01 80), height: 1.17, intensity: 7, kind: rect, width: 0.82}
+gel-light-key:
+  feetPosition: {x: -2.4, y: 2.6, z: 2.3}
+  id: gel-light-key
+  light: {aim: {x: 0, y: 1, z: 0}, color: oklch(0.98 0.01 80), height: 1.17, intensity: 14, kind: rect, width: 0.82}
+gel-light-rim:
+  feetPosition: {x: 0.9, y: 2.6, z: -2.8}
+  id: gel-light-rim
+  light: {aim: {x: 0, y: 1, z: 0}, color: oklch(0.95 0.02 230), height: 1.17, intensity: 11, kind: rect, width: 0.82}
+gel-mark:
+  feetPosition: {x: 0, y: 0.052, z: 0}
+  id: gel-mark
+  material: {color: oklch(0.75 0.02 250), unlit: true}
+  primitive: {innerRadius: 0.32, kind: ring, outerRadius: 0.34, thetaSegments: 48}
+  rotation: {pitch: -90}
+gel-room:
+  castShadow: false
+  feetPosition: {x: 0, y: 0, z: 0}
+  id: gel-room
+  material: {roughness: 0.85}
+  physics: static
+  primitive: {kind: scripted, script: scripts/gel/studio.js}
+gel-sign:
+  feetPosition: {x: 0, y: 3.7, z: -9.35}
+  id: gel-sign
+  vector: "<svg viewBox='0 0 600 70' width='6m'><text x='300' y='48' font-family='display' font-size='44' text-anchor='middle' fill='#2a313b'>HALCYON LABS · GEL STUDY 01</text></svg>"
+gel-softbox-fill:
+  children: [{feetPosition: {x: 0, y: 0.625, z: -0.165}, material: {color: "#ffffff", emissive: "#fffaf2", emissiveIntensity: 2.2, unlit: true}, primitive: {height: 1.17, kind: plane, width: 0.82}, rotation: {yaw: 180}}]
+  feetPosition: {x: 2.6, y: 2, z: 1.7}
+  id: gel-softbox-fill
+  material: {color: oklch(0.16 0.003 250), roughness: 0.7}
+  primitive: {depth: 0.32, height: 1.25, kind: box, width: 0.9}
+  rotation: {pitch: -14, yaw: 56.82148834060725}
+gel-softbox-key:
+  children: [{feetPosition: {x: 0, y: 0.625, z: -0.165}, material: {color: "#ffffff", emissive: "#fffaf2", emissiveIntensity: 2.2, unlit: true}, primitive: {height: 1.17, kind: plane, width: 0.82}, rotation: {yaw: 180}}]
+  feetPosition: {x: -2.4, y: 2, z: 2.3}
+  id: gel-softbox-key
+  material: {color: oklch(0.16 0.003 250), roughness: 0.7}
+  primitive: {depth: 0.32, height: 1.25, kind: box, width: 0.9}
+  rotation: {pitch: -14, yaw: -46.2188752351313}
+gel-softbox-rim:
+  children: [{feetPosition: {x: 0, y: 0.625, z: -0.165}, material: {color: "#ffffff", emissive: "#fffaf2", emissiveIntensity: 2.2, unlit: true}, primitive: {height: 1.17, kind: plane, width: 0.82}, rotation: {yaw: 180}}]
+  feetPosition: {x: 0.9, y: 2, z: -2.8}
+  id: gel-softbox-rim
+  material: {color: oklch(0.16 0.003 250), roughness: 0.7}
+  primitive: {depth: 0.32, height: 1.25, kind: box, width: 0.9}
+  rotation: {pitch: -14, yaw: 162.1811110854772}
+gel-stage:
+  feetPosition: {x: 0, y: 0, z: 0}
+  id: gel-stage
+  material: {color: oklch(0.3 0.006 250), roughness: 0.4}
+  physics: static
+  primitive: {height: 0.05, kind: cylinder, radialSegments: 64, radiusBottom: 2.05, radiusTop: 2}
+gel-stage-rim:
+  feetPosition: {x: 0, y: 0.05, z: 0}
+  id: gel-stage-rim
+  material: {color: oklch(0.85 0.1 185), emissive: oklch(0.85 0.12 185), emissiveIntensity: 2}
+  primitive: {kind: torus, radialSegments: 8, radius: 1.98, tube: 0.012, tubularSegments: 96}
+  rotation: {pitch: 90}
+gel-stand-fill:
+  children: [{feetPosition: {x: 0, y: 0, z: 0}, material: {color: oklch(0.18 0 0)}, primitive: {height: 0.12, kind: cone, radialSegments: 3, radius: 0.35}}]
+  feetPosition: {x: 2.6, y: 0, z: 1.7}
+  id: gel-stand-fill
+  material: {color: oklch(0.2 0 0), metalness: 0.6, roughness: 0.4}
+  physics: static
+  primitive: {height: 2.3, kind: cylinder, radiusBottom: 0.022, radiusTop: 0.018}
+gel-stand-key:
+  children: [{feetPosition: {x: 0, y: 0, z: 0}, material: {color: oklch(0.18 0 0)}, primitive: {height: 0.12, kind: cone, radialSegments: 3, radius: 0.35}}]
+  feetPosition: {x: -2.4, y: 0, z: 2.3}
+  id: gel-stand-key
+  material: {color: oklch(0.2 0 0), metalness: 0.6, roughness: 0.4}
+  physics: static
+  primitive: {height: 2.3, kind: cylinder, radiusBottom: 0.022, radiusTop: 0.018}
+gel-stand-rim:
+  children: [{feetPosition: {x: 0, y: 0, z: 0}, material: {color: oklch(0.18 0 0)}, primitive: {height: 0.12, kind: cone, radialSegments: 3, radius: 0.35}}]
+  feetPosition: {x: 0.9, y: 0, z: -2.8}
+  id: gel-stand-rim
+  material: {color: oklch(0.2 0 0), metalness: 0.6, roughness: 0.4}
+  physics: static
+  primitive: {height: 2.3, kind: cylinder, radiusBottom: 0.022, radiusTop: 0.018}
